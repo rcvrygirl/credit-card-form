@@ -11,8 +11,6 @@ export class CardFormComponent implements OnInit {
     name: new FormControl('', [
       Validators.required,
       Validators.minLength(3),
-      Validators.maxLength(5),
-      Validators.pattern(/\\s/)
     ])
   })
   constructor() { 
